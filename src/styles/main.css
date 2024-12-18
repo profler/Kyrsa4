@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Signika+Negative&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	color: black;
+}
+
+.main {
+	display: flex;
+	text-align: center;
+	width: 1200px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.img {
+	width: 380px;
+	height: 250px;
+}
+
+.block {
+	margin: 10px;
+	cursor: pointer;
+}
+
+.text {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+.ng {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#groupID {
+	margin-bottom: 15px;
+}
+
+@media (max-width: 1200px) {
+	.main {
+	display: flex;
+	text-align: center;
+	width: 1000px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
+
+	.img {
+	width: 313px;
+	height: 200px;
+	}
+
+	.text {
+	font-size: 17px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.main {
+	display: flex;
+	text-align: center;
+	width: 768px;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	}
+
+	.img {
+	width: 236px;
+	height: 155px;
+	}
+
+	.text {
+	font-size: 15px;
+	}
+}
