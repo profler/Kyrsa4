@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Главная</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/login.css">
+	<link rel="stylesheet" type="text/css" href="styles/app.css">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="HandheldFriendly" content="true"/>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src='scripts/main.js'></script>
+	<script src='scripts/user.js'></script>
+	<script id="script"></script>
+</head>
+<body>
+<div class="ng" id="ngID" style="display: none;">
+	<p id="nameID"></p>
+	<p id="groupID"></p>
+	<hr>
+</div>
+
+
+<div class="mainlogstr" id="logstr">
+	<div class="mainlog">
+		<label for="userInput">Введите код доступа:</label>
+		<input type="text" id="userInput" placeholder="Введите код...">
+		<p id="errofCode"></p>
+		<button class="btn_sub" id="submitButton" onclick="codeDetect()">Войти</button>
+
+	</div>
+</div>
+
+
+
+<div id="glavstr" style="display: none;">
+	<div class="main">
+		<div class="block">
+			<img src="img/1.jpg" onclick="chooseQuiz(); chooseQuiz1();" class="img">
+			<div class="text">
+				<p>Основные принципы ООП</p>
+			</div>
+		</div>
+		<div class="block">
+			<img src="img/1.jpg" onclick="chooseQuiz(); chooseQuiz2();" class="img">
+			<div class="text">
+				<p>Классы и объекты</p>
+			</div>
+		</div>
+		<div class="block">
+			<img src="img/1.jpg" onclick="chooseQuiz(); chooseQuiz3();" class="img">
+			<div class="text">
+				<p>Наследование и его виды</p>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="block">
+			<img src="img/1.jpg" onclick="chooseQuiz(); chooseQuiz4();" class="img">
+			<div class="text">
+				<p>Интерфейсы и абстрактные классы</p>
+			</div>
+		</div>
+		<div class="block">
+			<img src="img/1.jpg" onclick="chooseQuiz(); chooseQuiz5();" class="img">
+			<div class="text">
+				<p>Полиморфизм</p>
+			</div>
+		</div>
+		<div class="block">
+			<img src="img/1.jpg" onclick="chooseQuiz(); chooseQuiz6();" class="img">
+			<div class="text">
+				<p>Принципы SOLID</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="quizstr" style="display: none;">
+	<div class="quizmain" id="quizmain">
+		<p style="font-size: 25px; margin-bottom: 30px;" id="nameofQuiz"></p>
+        <a id="numb">Вопрос №1</a>
+        <p class="head__content" id="quizID"></p>
+        <div class="buttons">
+            <button class="button" id="ans1" onclick="clickQiuz(1); right();"></button>
+            <button class="button" id="ans2" onclick="clickQiuz(2); right();"></button>
+            <button class="button" id="ans3" onclick="clickQiuz(3); right();"></button>
+            <button class="button" id="ans4" onclick="clickQiuz(4); right();"></button>
+        </div>
+		<button class="_back" onclick="backtoGlav()">Вернуться назад</button>
+    </div>
+    <div class="quizmain" id="aftertest" style="display: none;">
+        <p>Результаты теста</p>
+        <a id="vern"></a>
+        <p id="res"></p>
+		<button class="_back" onclick="backtoGlav()">Завершить тест</button>
+    </div>
+</div>
+</body>
+</html>
