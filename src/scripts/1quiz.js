@@ -16,7 +16,10 @@ function ifNumb() {
     if (numb==10){quiz10();}
 }
 
-
+function clickQiuz(otv) {
+    ans = otv;
+    ifNumb();
+}
 
 function quiz1() {
     document.getElementById("ans1").innerHTML = "Создавать новый класс, основанный на другом классе";
