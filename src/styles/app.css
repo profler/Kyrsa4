@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Signika+Negative&display=swap');
+
+body, html
+{
+	font-family: helvetica, arial;
+	background: #f9f9f9;
+	color: #111;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.quizmain {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.head__content 
+{
+	font-size: 24px;
+	font-weight: 500;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+.buttons {
+	margin: auto;
+}
+
+.button
+{
+	border: 0;
+	border-radius: 10px;
+	background: #6477EB;
+	color: #fff;
+	padding: 10px 25px;
+	width: 800px;
+	font-size: 12pt;
+	display: block;
+	margin-top: 8px;
+	cursor: pointer;
+}
+
+._back {
+	margin-top: 25px;
+	border: 0;
+	border-radius: 10px;
+	background: gainsboro;
+	padding: 10px 25px;
+	font-size: 12pt;
+	cursor: pointer;
+}
