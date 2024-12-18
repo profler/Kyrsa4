@@ -1,0 +1,14 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron . --no-sandbox"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^28.2.1"
+  }
+}
